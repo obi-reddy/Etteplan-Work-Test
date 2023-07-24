@@ -12,5 +12,13 @@
         <input type="submit" value="Submit" style="margin-top: 10px; padding: 5px 10px;background-color: #0066cc; color: #fff; border: none; cursor: pointer;">
 
         </form>
+
+        {% if value %}
+            <p>Target ID Value: {{value}}</p>
+            <p>Target value Saved in file: {{filename}}</p>
+            <p>Entered Target ID: {{id}}</p>
+
+        {% endif %}
+        
     </body>
 </html>
