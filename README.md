@@ -38,4 +38,20 @@ Explanation of the command:
                            
 
 
+<h1>Resutls of screenshots with web Application </h1>
+<h2>Screen shot 1</h2>
+![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/ce236d94-fddc-4cdf-9618-10a4aab4368a)
+<h2>Screen shot 2: Target element id 42007</h2>
+![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/5925e3ba-49b8-45de-b92b-ddb367fee601)
+<h2>Screen shot 3: With target element id 4200</h2>
+![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/3621bc48-15c1-4348-b41c-0ecb22ba0f30)
+<h2>Screen shot 4: With entering Alphabets</h2>
+![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/6b55b87e-4b5c-4506-bc68-56ce80d0fa3a)
+<h2>Screen shot 5: with empty target id</h2>
+![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/ed02cf9f-0983-4384-8fd2-06aa8b605b3f)
+
+
+
+
+
 
