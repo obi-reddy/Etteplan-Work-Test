@@ -9,7 +9,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 
-#This function will get the unique output file name
+#This function will get the unique output file name "if unique name is not required just comment the code from line 13 to 26 and line number 52 "
 def get_filename(base_filename):
 
     #It saves the file name and extension in variables
@@ -110,7 +110,7 @@ def main():
         
         #if the value is not present in xml file
         else:
-            
+
             #It will display the page with errorr message with the help of index.html
             return render_template('index.html', error_msg=f"No element with id '{target_id}' found in the xml file.")
     else:
