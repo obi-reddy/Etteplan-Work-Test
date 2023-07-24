@@ -18,6 +18,9 @@
             <p>Target value Saved in file: {{filename}}</p>
             <p>Entered Target ID: {{id}}</p>
 
+        {% elif error_msg %}
+            <p>Error: {{error_msg}}</p>
+
         {% endif %}
         
     </body>
