@@ -4,6 +4,15 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
+def get_filename(base_filename):
+    filename, ext = os.path.splitext(base_filename)
+    counter=1
+    while os.path.exists(base_filename):
+        base_filename = f"{filename}{counter}{ext}"
+        counter+=1
+    return base_filename
+
+
 def retrieve_and_write(xml_file, target_id, output_file):
 
     try:
@@ -17,6 +26,8 @@ def retrieve_and_write(xml_file, target_id, output_file):
         if element_target is not None:
 
             target_value = element_target.find("target").text
+
+            output_file = get_filename(output_file)
 
             with open(output_file, "w") as f:
                 f.write(target_value)
