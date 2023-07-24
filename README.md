@@ -21,3 +21,7 @@ This web application is created using the Flask framework, designed to fetch a s
 <h3>9. If successful, you can download the output file containing the retrieved value using the "Download Result"</h3>
 <h3>10. You can repeat the process by entering different target IDs and clicking "Submit" again.</h3>
 
+
+<h1> Other way to Use the application</h1>
+
+
