@@ -4,4 +4,5 @@ This web application is created using the Flask framework, designed to fetch a s
 
 <h2>Prerequisites</h2>
 <p>Python 3.8.0</p>
+
 <p>Flask library installed."install it using pip install Flask"</p>
