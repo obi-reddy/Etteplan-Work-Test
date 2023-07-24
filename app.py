@@ -43,7 +43,7 @@ def retrieve_and_write(xml_file, target_id, output_file):
 def main():
 
     if request.method=='POST':
-        xml_file_name="ma_gentext.xml"
+        xml_file_name="sma_gentext.xml"
 
         target_id = request.form['target_id']
 
