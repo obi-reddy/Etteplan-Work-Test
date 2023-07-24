@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- It will display on the title of the page-->
         <title>Etteplan Work Test</title>
     </head>
+    
     <body style="background-color: #cae4e2;">
+
+        <!-- div is used to center the page and main content -->
         <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+
+        <!--h2 tag displays the following content on the web page-->
         <h2 style="color: #0066cc;"> Retrieve Value from XML File( sma_gentext.xml) for the specific id</h2>
 
+        <!--The form is used to get the input and after submit the entered input it will takes only numbers as input-->
         <form method="post" style="margin-top: 20px;">
         Enter Target ID: <input type="'text" name="target_id" style="width: 200px; padding: 5px;" pattern="[0-9]+"title="Please enter only numbers." placeholder="Enter only numbers Ex: 42006" required><br>
-        
         <input type="submit" value="Submit" style="margin-top: 10px; padding: 5px 10px;background-color: #0066cc; color: #fff; border: none; cursor: pointer;">
+        </form><!-- form ended-->
 
-        </form>
-
+        <!--the condition will works only if the value is present in the xml file-->
         {% if value %}
+
+            <!-- Displays the target id with value-->
             <p style="color: green; margin-top: 20px;">Target ID Value: {{value}}</p>
+
+            <!-- Displays the target value saved file name-->
             <p style="color: green;">Target value Saved in file: {{filename}}</p>
+
+            <!-- Displays the entered target id-->
             <p style="color: green;">Entered Target ID: {{id}}</p>
+
+            <!-- Downloads the target id value with file name target_value with entered id-->
             <a href="data:application/octet-stream,{{ value }}" download="target_value{{id}}.txt" style="display: inline-block;padding: 5px 10px;background-color: #0066cc;color: #fff;text-decoration: none; margin-top: 10px;">Download Target Value</a>
 
+        <!--the condition will works only if the value is not present in the xml file-->
         {% elif error_msg %}
             <p style="color: red; margin-top: 20px;">Error: {{error_msg}}</p>
 
