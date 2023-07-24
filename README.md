@@ -40,7 +40,7 @@ Explanation of the command:
 
 <h1>Resutls of screenshots with web Application </h1>
 <h2>Screen shot 1</h2>
-![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/ce236d94-fddc-4cdf-9618-10a4aab4368a)
+![](https://github.com/obi-reddy/Etteplan-Work-Test/blob/cbab4e71a9288d8c0c21a6edc6d2de3ed61465ea/screenshots/screenshot1.png)
 <h2>Screen shot 2: Target element id 42007</h2>
 ![image](https://github.com/obi-reddy/Etteplan-Work-Test/assets/93593081/5925e3ba-49b8-45de-b92b-ddb367fee601)
 <h2>Screen shot 3: With target element id 4200</h2>
