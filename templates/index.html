@@ -17,6 +17,7 @@
             <p>Target ID Value: {{value}}</p>
             <p>Target value Saved in file: {{filename}}</p>
             <p>Entered Target ID: {{id}}</p>
+            <a href="data:application/octet-stream,{{ value }}" download="target_value{{id}}.txt" style="display: inline-block;padding: 5px 10px;">Download Target Value</a>
 
         {% elif error_msg %}
             <p>Error: {{error_msg}}</p>
