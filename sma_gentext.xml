@@ -11,11 +11,11 @@
 				<source>Note</source>
 				<target>Obs!</target>
 			</trans-unit>
-			<trans-unit id="42007" restype="string">
+			<trans-unit id="42008" restype="string">
 				<source>DANGER</source>
 				<target>FARA</target>
 			</trans-unit>
-			<trans-unit id="42008" restype="string">
+			<trans-unit id="42009" restype="string">
 				<source>CAUTION</source>
 				<target>FÖRSIKTIGHET</target>
 			</trans-unit>
