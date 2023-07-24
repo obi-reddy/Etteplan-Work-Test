@@ -22,6 +22,20 @@ This web application is created using the Flask framework, designed to fetch a s
 <h3>10. You can repeat the process by entering different target IDs and clicking "Submit" again.</h3>
 
 
-<h1> Other way to Use the application</h1>
+<h1> simple way to Use the application using Docker</h1>
+<h1>To run the Docker image you need to follow these steps:</h1>
+<h2>Step 1: Open your web browser and go to the Docker website: https://www.docker.com/ Create account and install the docker</h2>
+<h2>Step 2: After installing Docker on your system login to Docker</h2>
+<h2>Step 3: Open terminal and Pull the Docker Image: Use the "docker pull" command to download the Docker image from the Docker Hub repository:</h2>
+<h4>docker pull obireddy572/work_test_app:latest</h4>
+<h2>Step 4: Run the Docker Container: After pulling the image, you can use the "docker run" command to start the container:</h2>
+<h4>docker run -d -p 5000:5000 obireddy572/work_test_app:latest </h4>
+Explanation of the command:   
+                           -d: Detach the container and run it in the background.
+                           -p 5000:5000: Map port 5000 of the host to port 5000 inside the container.
+                           obireddy572/work_test_app:latest: This specifies the name and version (tag) of the Docker image to run.
+                           With this command, you can access the application in your web browser by navigating to http://localhost:5000
+                           
+
 
 
