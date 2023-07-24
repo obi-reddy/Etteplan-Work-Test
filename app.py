@@ -26,10 +26,16 @@ def retrieve_and_write(xml_file, target_id, output_file):
                 return target_value, output_file, target_value
             
         else:
+            print(f"No element with id '{target_id}' found in the xml file.")
             return None, None, None
-        
-    except Exception as e:
+    except FileNotFoundError:
 
+        print(f" Xml file '{xml_file}' not found.")
+
+        return None, None, None
+
+    except Exception as e:
+        print(f" Error type : {e}")
         return None, None, None
 
 
@@ -37,7 +43,7 @@ def retrieve_and_write(xml_file, target_id, output_file):
 def main():
 
     if request.method=='POST':
-        xml_file_name="sma_gentext.xml"
+        xml_file_name="ma_gentext.xml"
 
         target_id = request.form['target_id']
 
@@ -51,9 +57,9 @@ def main():
         
         else:
 
-            return None
-
-    return render_template('index.html')
+            return render_template('index.html', error_msg=f"No element with id '{target_id}' found in the xml file.")
+    else:
+        return render_template('index.html')
 
 if __name__=='__main__':
     app.run(host='0.0.0.0',port=5000)
