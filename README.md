@@ -39,16 +39,7 @@ Explanation of the command:
 
 
 <h1>Resutls of screenshots with web Application </h1>
-<h2>Screen shot 1</h2>
-![Screen shot 1](screenshots/screenshot1.png)
-<h2>Screen shot 2: Target element id 42007</h2>
-![Screen shot 2](screenshots/screenshot2.png)
-<h2>Screen shot 3: With target element id 4200</h2>
-![Screen shot 3](screenshots/screenshot3.png)
-<h2>Screen shot 4: With entering Alphabets</h2>
-![Screen shot 4](screenshots/screenshot4.png)
-<h2>Screen shot 5: with empty target id</h2>
-![Screen shot 5](screenshots/screenshot5.png)
+Results of the web application you check  the 'Screenshots' folder for better understanding.
 
 
 
