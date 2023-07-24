@@ -1,4 +1,4 @@
-# Etteplan-Work-Test
+# XML Value Retrieval Web Application 
 <h2>Introduction</h2>
 This web application is created using the Flask framework, designed to fetch a specific value from an XML file (sma_gentext.xml) using a provided target ID. To ensure that existing files are not overwritten, the retrieved value is saved to a text file (out_put_value.txt) with a unique name.
 
@@ -41,8 +41,7 @@ Explanation of the command:
 <h1>Resutls of screenshots with web Application </h1>
 Results of the web application you check  the 'Screenshots' folder for better understanding.
 
-
-
+https://github.com/obi-reddy/Etteplan-Work-Test/commit/cbab4e71a9288d8c0c21a6edc6d2de3ed61465ea
 
 
 
