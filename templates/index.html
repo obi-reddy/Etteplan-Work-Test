@@ -3,8 +3,9 @@
     <head>
         <title>Etteplan Work Test</title>
     </head>
-    <body>
-        <h2> Retrieve Value from XML File( sma_gentext.xml) for the specific id</h2>
+    <body style="background-color: #cae4e2;">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+        <h2 style="color: #0066cc;"> Retrieve Value from XML File( sma_gentext.xml) for the specific id</h2>
 
         <form method="post" style="margin-top: 20px;">
         Enter Target ID: <input type="'text" name="target_id" style="width: 200px; padding: 5px;" pattern="[0-9]+"title="Please enter only numbers." placeholder="Enter only numbers Ex: 42006" required><br>
@@ -14,13 +15,13 @@
         </form>
 
         {% if value %}
-            <p>Target ID Value: {{value}}</p>
-            <p>Target value Saved in file: {{filename}}</p>
-            <p>Entered Target ID: {{id}}</p>
-            <a href="data:application/octet-stream,{{ value }}" download="target_value{{id}}.txt" style="display: inline-block;padding: 5px 10px;">Download Target Value</a>
+            <p style="color: green; margin-top: 20px;">Target ID Value: {{value}}</p>
+            <p style="color: green;">Target value Saved in file: {{filename}}</p>
+            <p style="color: green;">Entered Target ID: {{id}}</p>
+            <a href="data:application/octet-stream,{{ value }}" download="target_value{{id}}.txt" style="display: inline-block;padding: 5px 10px;background-color: #0066cc;color: #fff;text-decoration: none; margin-top: 10px;">Download Target Value</a>
 
         {% elif error_msg %}
-            <p>Error: {{error_msg}}</p>
+            <p style="color: red; margin-top: 20px;">Error: {{error_msg}}</p>
 
         {% endif %}
         
